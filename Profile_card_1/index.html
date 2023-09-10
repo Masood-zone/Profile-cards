@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Profile Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#6886FF]">
+    <!-- Left with mobile view -->
+    <div class="w-[800px] flex justify-start items-center mx-auto gap-6 relative">
+        <!-- Profile Picture -->
+        <div class="w-[400px] h-[550px] my-5 bg-white shadow-2xl ">
+            <img src="./images/profile_card_1.jpg" class="w-full h-full object-cover" alt="Product designer picture" />
+            <!-- Background on Image -->
+            <div class="absolute top-5 opacity-50 bg-[#6A6B6A] w-[388px] h-[550px] p-5">
+            </div>
+            <!-- Text on background -->
+            <div class="absolute top-[450px] left-[90px] flex items-center">
+                <div class="flex flex-col mx-10 text-white ">
+                    <h1 class="text-3xl font-bold">Ella Simons</h1>
+                    <p>Product Designer</p>
+                </div>
+                <div class="w-[45px] h-[45px] bg-[#434343] rounded-full ">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+                        <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="32" d="M262.62 336L342 256l-79.38-80M330.97 256H170" />
+                        <path d="M256 448c106 0 192-86 192-192S362 64 256 64 64 150 64 256s86 192 192 192z" fill="none"
+                            stroke="white" stroke-miterlimit="10" stroke-width="32" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Profile Card -->
+        <div class="w-[400px] h-[550px] my-5 bg-white shadow-2xl ">
+            <!-- Gender logo -->
+            <div class="w-[30px] h-[30px] float-right pt-2">
+                <img src="./images/female-outline.svg" alt="Female icon" />
+            </div>
+
+            <!-- Avatar profile -->
+            <div class="px-7 pt-10 mb-4">
+                <div class="w-[100px] h-[100px] rounded-full border-2 outline-1 bg-gray-600 overflow-hidden">
+                    <img src="./images/profile_card_1.jpg" alt="Avatar picture" class="w-full object-contain" />
+                </div>
+            </div>
+            <!-- Description -->
+            <div class="flex flex-col pb-4 px-7">
+
+                <h1 class="text-[#5677FF] text-3xl font-bold">Ella Simons</h1>
+
+                <p class="pt-3 text-lg text-[#848484] font-medium">Product Designer</p>
+
+                <p class="py-4 text-[#B0B0B0]">
+                    Sr. UI/UX Design Manager @sakspro
+                    <br />
+                    formerly interactive Director at @enlab.
+                </p>
+            </div>
+            <!-- Bar/Separator -->
+            <div class="border-b-2"></div>
+
+            <!-- User score -->
+            <div class="flex items-center justify-start pt-4 px-7">
+                <div class="text-[#5D5D5D]">
+                    <p class="text-4xl font-medium">2390</p>
+                    <p class="">Followers</p>
+                </div>
+                <div class="text-[#5D5D5D] pl-8">
+                    <p class="text-4xl font-medium">450</p>
+                    <p class="">Following</p>
+                </div>
+
+            </div>
+
+            <!-- Button -->
+            <div
+                class="bg-[#6886FF] py-2 px-full text-center mx-3 mt-20 hover:bg-gray-700 hover:cursor-pointer transition duration-200">
+                <button class="text-lg font-medium text-white">Follow</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
